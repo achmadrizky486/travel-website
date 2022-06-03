@@ -19,7 +19,7 @@ const Navbar = () => {
     setLogo(!logo);
   };
   return (
-    <div className="flex justify-between items-center h-20 px-4">
+    <div className="flex w-full justify-between items-center h-20 px-4 absolute z-10 text-white">
       <div>
         <h1 className={logo ? "hidden" : "block"}>Beach</h1>
       </div>
@@ -48,7 +48,7 @@ const Navbar = () => {
       <div
         className={
           nav
-            ? "absolute left-0 top-[-6px] w-full bg-gray-100/90 px-4 py-7 flex flex-col"
+            ? "absolute left-0 top-[-6px] w-full bg-gray-100/90 px-4 py-7 flex flex-col text-black"
             : "absolute left-[-100%]"
         }
       >
